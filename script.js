@@ -1,13 +1,6 @@
 const piano = document.querySelector('.piano');
 const pianoKeys = document.querySelectorAll('.piano-key');
 
-/*piano.addEventListener('click', (event) => {
-    if(event.target.classList.contains('piano-key')) {
-      const note = event.target.dataset.note;
-      const src = `assets/audio/${note}.mp3`;
-      playAudio(src);
-    }
-});*/
 function playAudio(src) {
     const audio = new Audio();
     audio.src = src;
